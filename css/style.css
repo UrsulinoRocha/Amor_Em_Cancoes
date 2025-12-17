@@ -1,0 +1,907 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  max-width: 1300px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  display: flex;
+}
+
+.logo span {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: auto;
+  height: 60px;
+  margin-right: 13.5px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px;
+  height: 80px;
+}
+
+.nav_logo {
+  padding: 10px 0;
+}
+
+.menu_items {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #C9A24D;
+}
+
+#menu_toggle {
+  display: none;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
+@media (max-width: 860px) {
+  .nav {
+    padding: 0 20px;
+  }
+
+  .menu_items {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 260px;
+    height: 100%;
+    background-color: #fff;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: px;
+    transition: left 0.3s ease;
+    z-index: 1001;
+    padding-top: 60px;
+  }
+
+  .menu_items.show {
+    left: 0;
+  }
+
+  .menu_items #menu_toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+
+  #menu_toggle {
+    display: block;
+  }
+}
+
+/* Additional styles for smooth transition and better visuals */
+header.showMenu .menu_items {
+  left: 0;
+}
+
+#menu_toggle img {
+  width: 100%;
+  height: auto;
+}
+
+/* Adjustments for a cleaner look and feel */
+.nav_link {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.logo h2 {
+  font-size: 24px;
+  font-weight: 600;
+  color: rgb(0, 0, 0);
+}
+
+
+/* Repertório */
+
+.card-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  max-width: 1250px;
+  margin: 0px auto;
+  padding: 30px 40px;
+  gap: 30px;
+}
+
+.card-list .card-item {
+  background: #fff;
+  padding: 26px;
+  border-radius: 8px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.10);
+  list-style: none;
+  cursor: pointer;
+  text-decoration: none;
+  border: 2px solid transparent;
+  transition: border 0.5s ease;
+}
+
+.card-list .card-item:hover {
+  border: 2px solid #000;
+}
+
+.card-list .card-item img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.card-list span {
+  display: inline-block;
+  background: #F7DFF5;
+  margin-top: 32px;
+  padding: 8px 15px;
+  font-size: 0.75rem;
+  border-radius: 50px;
+  font-weight: 600;
+}
+
+.card-list .NomeMusica{
+  background-color: #F7DFF5;
+  color: #B22485;
+}
+
+
+
+.card-item h3 {
+  color: #000;
+  font-size: 1.438rem;
+  margin-top: 28px;
+  font-weight: 600;
+}
+
+.card-item .arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(-35deg);
+  height: 50px;
+  width: 50px;
+  color: #000;
+  border: 1px solid #000;
+  border-radius: 50%;
+  /*margin-top: 40px;*/
+  transition: 0.2s ease;
+}
+
+.card-list .card-item:hover .arrow {
+  background: #000;
+  color: #fff;
+}
+
+@media (max-width: 1200px) {
+  .card-list .card-item {
+    padding: 15px;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .card-list {
+    margin: 0 auto;
+  }
+}
+
+.cardlow {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 10px;
+
+}
+
+.cardlow audio {
+  width: 80%;
+  height: 50px;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+.popular h1 {
+
+  text-align: center;
+  font-size: 1.75rem;
+  margin-top: 65px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+
+
+
+
+   /* BOTÃO DOWNLOAD REPERTÓRIO */
+
+.repertorio-download {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0 10px;
+}
+
+.btn-download {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 12px 22px;
+  border-radius: 50px;
+
+  background: linear-gradient(135deg, #F5E6A8, #C9A24D);
+  color: #000;
+
+  font-weight: 600;
+  font-size: 15px;
+  text-decoration: none;
+
+  transition: 0.3s ease;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
+}
+
+.btn-download i {
+  font-size: 18px;
+}
+
+.btn-download:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
+}
+
+@media (max-width: 480px) {
+  .btn-download {
+    font-size: 14px;
+    padding: 10px 18px;
+  }
+}
+
+
+
+
+/* Membros da banda */
+.swipercon {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+}
+
+
+.con {
+  max-width: 1220px;
+  width: 100%;
+  padding: 30px 0;
+}
+
+.slide-container {
+  margin: 0 30px;
+  overflow: hidden;
+}
+
+.slide-container :hover {
+  cursor: pointer;
+}
+
+.card {
+  background: #fff;
+  border-radius: 8px;
+  border: gainsboro solid 2px;
+}
+
+.card .image-box {
+  height: 250px;
+}
+
+.card .image-box img {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px 8px 0 0;
+}
+
+.card .profile-details {
+  display: flex;
+  align-items: center;
+  column-gap: 12px;
+  padding: 15px;
+}
+
+.card .profile-details img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+.profile-details .name {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.profile-details .job {
+  font-size: 12px;
+  font-weight: 500;
+  color: #4d4d4d;
+}
+
+.swiper-navBtn {
+  color: #000;
+  height: 50px;
+  width: 50px;
+  transform: translateY(-40%);
+  background: #ffffff;
+  border-radius: 50%;
+}
+
+.swiper-navBtn::before,
+.swiper-navBtn::after {
+  font-size: 24px;
+}
+
+.swiper-pagination-bullet {
+  background-color: #333;
+}
+
+@media screen and (max-width: 768px) {
+  .swiper-navBtn {
+    display: none;
+  }
+}
+
+.fp {
+
+  text-align: center;
+  font-size: 1.75rem;
+  margin-top: 65px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+
+
+/* Nossa história */
+
+
+/* Nossa história */
+.about {
+  margin-top: 45px;
+  padding: 0 20px;
+}
+
+.aboutus {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1151px;
+  margin: 0 auto;
+  gap: 35px;
+  padding: 30px;
+
+  border-radius: 8px;
+  border: 2px solid gainsboro;
+  border-top: none;
+}
+
+.abtleft {
+  flex: 1;
+}
+
+.abtright {
+  flex: 0 0 260px;
+  display: flex;
+  justify-content: center;
+}
+
+.abtright video {
+  width: 100%;
+  max-width: 260px;
+  aspect-ratio: 9 / 16;
+  border-radius: 8px;
+}
+
+.aboutus h3 {
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.aboutus p {
+  text-align: justify;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  color: #333;
+  line-height: 1.6;
+}
+
+
+.abtright iframe {
+  width: 100%;
+  max-width: 260px;
+  aspect-ratio: 9 / 16;
+  height: auto;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .aboutus {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .abtleft p {
+    text-align: left;
+  }
+
+  .abtright {
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .aboutus {
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .aboutus h3 {
+    font-size: 18px;
+  }
+
+  .aboutus p {
+    font-size: 14px;
+  }
+}
+
+
+
+
+/* .aboutus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1151px;
+  margin: 0 auto;
+  gap: 35px;
+  border-radius: 8px;
+  border-bottom: 2px solid gainsboro;
+  border-left: 2px solid gainsboro;
+  border-right: 2px solid gainsboro;
+  padding: 30px;
+}
+
+.aboutus p {
+  text-align: justify;
+  color: #333;
+  font-family: "Poppins";
+  font-size: 15px;
+
+
+}
+
+.abtright iframe {
+  border-radius: 8px;
+}
+
+.aboutus h3 {
+  padding-bottom: 2px;
+  font-size: 20px;
+  font-family: "Poppins";
+  font-weight: 500;
+}
+
+.about {
+  margin-top: 45px;
+
+}
+
+.faq25 h1 {
+
+
+  text-align: center;
+  font-size: 1.75rem;
+  margin-top: 40px;
+  color: black;
+  margin-bottom: 20px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+ */
+
+
+
+
+
+/* Perguntas frequentes */
+
+.faqcon {
+  margin: 0;
+  padding: 0;
+  font-family: 'Hind', sans-serif;
+  background: #fff;
+  color: #4d5974;
+  display: flex;
+  padding-bottom: 30px;
+
+}
+
+.faq25 {
+  margin: 0 auto;
+  padding: 3rem;
+  width: 48rem;
+}
+
+.accordion .accordion-item {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.accordion .accordion-item button[aria-expanded='true'] {
+  border-bottom: 1px solid magenta;
+}
+
+.accordion-title {
+  font-size: 17px;
+  font-family: "Poppins";
+}
+
+.accordion button {
+  position: relative;
+  display: block;
+  text-align: left;
+  width: 100%;
+  padding: 1em 0;
+  color: #7288a2;
+  font-size: 1.15rem;
+  font-weight: 400;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+.accordion button:hover,
+.accordion button:focus {
+  cursor: pointer;
+  color: magenta;
+}
+
+.accordion button:hover::after,
+.accordion button:focus::after {
+  cursor: pointer;
+  color: magenta;
+  border: 1px solid magenta;
+}
+
+.accordion button .accordion-title {
+  padding: 1em 1.5em 1em 0;
+}
+
+.accordion button .icon {
+  display: inline-block;
+  position: absolute;
+  top: 18px;
+  right: 0;
+  width: 22px;
+  height: 22px;
+  border: 1px solid;
+  border-radius: 22px;
+}
+
+.accordion button .icon::before {
+  display: block;
+  position: absolute;
+  content: '';
+  top: 9px;
+  left: 5px;
+  width: 10px;
+  height: 2px;
+  background: currentColor;
+}
+
+.accordion button .icon::after {
+  display: block;
+  position: absolute;
+  content: '';
+  top: 5px;
+  left: 9px;
+  width: 2px;
+  height: 10px;
+  background: currentColor;
+}
+
+.accordion button[aria-expanded='true'] {
+  color: magenta;
+}
+
+.accordion button[aria-expanded='true'] .icon::after {
+  width: 0;
+}
+
+.accordion button[aria-expanded='true']+.accordion-content {
+  opacity: 1;
+  max-height: 9em;
+  transition: all 200ms linear;
+  will-change: opacity, max-height;
+}
+
+.accordion .accordion-content {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 200ms linear, max-height 200ms linear;
+  will-change: opacity, max-height;
+}
+
+.accordion .accordion-content p {
+  font-size: 1rem;
+  font-weight: 300;
+  margin: 2em 0;
+}
+
+
+/*footer*/
+
+.footer {
+  width: 100%;
+  background-color: #fcfcfc;
+  padding: 50px 0;
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.5);
+}
+
+
+/* social-links */
+
+.footer-col .social-links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  font-size: 21px;
+  background-color: rgba(0, 0, 0, 0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+
+}
+
+.footer-col .social-links a:hover {
+  color: #C9A24D;
+  background-color: #ffffff;
+  
+}
+
+
+
+/*responsive*/
+@media (max-width: 767px) {
+  .footer-col {
+    width: 50%;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .footer-col .social-links {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+
+footer {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 
+.logo span {
+  background: linear-gradient(45deg, #f7e7a1, #d6b26b, #b8964e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+} */
+
+
+
+
+
+/* logo */
+
+.logo {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  line-height: 1.2;
+  max-width: 100%;
+}
+
+/* Amor / Canções */
+.logo-amor,
+.logo-cancoes {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-weight: 00;
+
+  font-size: clamp(26px, 5vw, 42px);
+
+  background: linear-gradient(135deg,
+      #F5E6A8,
+      #E6C77B,
+      #C9A24D);
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* em */
+.logo-em {
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  font-size: clamp(14px, 2.5vw, 18px);
+  margin: 0 6px;
+  color: #E6C77B;
+  transform: translateY(-1px);
+}
+
+
+
+@media (max-width: 768px) {
+  .logo {
+    flex-direction: column;
+    align-items: flex-start;
+
+  }
+
+  .logo-amor,
+  .logo-cancoes {
+    font-size: 24px;
+  }
+
+  .logo-em {
+    margin: 2px 0;
+    font-size: 14px;
+  }
+}
+
+
+/* HERO */
+.hero {
+  position: relative;
+  min-height: 100vh;
+  background-image: url("/Sangeet-main/Sangeet-main/images/fundo2.png");
+  background-size: cover;
+  background-position: center top;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.35),
+      rgba(0, 0, 0, 0.55));
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 900px;
+
+  transform: translateY(200px);
+}
+
+@media (max-width: 768px) {
+  .hero-content {
+    transform: translateY(60px);
+  }
+}
+
+.hero-title {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-weight: 600;
+  font-size: clamp(2.4rem, 5vw, 4rem);
+  margin-bottom: 16px;
+
+  background: linear-gradient(135deg,
+      #F5E6A8,
+      #E6C77B,
+      #C9A24D);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-subtitle {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(1rem, 2.5vw, 1.4rem);
+  color: #ffffff;
+  letter-spacing: 0.5px;
+  margin-top: -4px;
+}
+
+
+
+/* botão flutuante */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+
+  width: 56px;
+  height: 56px;
+
+  background-color: #25D366;
+  color: #fff;
+
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 28px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+
+  z-index: 9999;
+  transition: 0.3s ease;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.08);
+  background-color: #1ebe5d;
+}
+
+
+@media (max-width: 480px) {
+  .whatsapp-float {
+    bottom: 16px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+  }
+}

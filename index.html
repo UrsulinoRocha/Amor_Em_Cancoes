@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amor em Cançôes</title>
+  <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/repertorio.css" />
+  <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Playfair+Display+SC&display=swap"
+    rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,600&display=swap"
+    rel="stylesheet">
+
+
+  <script src="js/script.js" defer></script>
+  <script src="js/repertorio.js"></script>
+  <script src="js/jquery.counterup.min.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init({
+        publicKey: "teNy4vXNSIveuIVzR",
+      });
+    })();
+  </script>
+</head>
+
+
+
+
+<body>
+  <header>
+    <nav class="nav container">
+      <div class="logo">
+        <span class="logo-amor"> Amor</span>
+        <span class="logo-em">em</span>
+        <span class="logo-cancoes">Canções ♪</span>
+      </div>
+      </span>
+      </div>
+      <ul class="menu_items">
+        <img src="images/times.svg" alt="Close menu" id="menu_toggle" />
+        <li><a href="index.html" class="nav_link">Início</a></li>
+        <li><a href="#Nossa história" class="nav_link">Nossa história</a></li>
+        <li><a href="#Membros da banda" class="nav_link">Equipe</a></li>
+        <li><a href="#Repertório" class="nav_link">Repertório</a></li>
+        <li><a href="#Dúvidas" class="nav_link">Dúvidas</a></li>
+      </ul>
+      <img src="images/bars.svg" alt="Open menu" id="menu_toggle" />
+    </nav>
+  </header>
+
+
+
+  <!--HERO-->
+
+  <section class="hero">
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+      <h1 class="hero-title">Amor em Canções</h1>
+      <p class="hero-subtitle">Seu grande dia ainda mais especial!</p>
+    </div>
+  </section>
+
+
+  <!-- Nossa história -->
+  <section class="about" id="Nossa história">
+    <h1 class="fp">Nossa história</h1>
+    <div class="aboutus">
+      <div class="abtleft">
+        <h3>Amor em Canções</h3>
+        <p>Formado em 04 de janeiro de 2020, o Amor em Canções é um
+          grupo musical dedicado a tornar cerimônias de casamento ainda mais emocionantes e
+          memoráveis por meio da música. A formação conta com três músicos experientes: Karine
+          (Vocal), Dika (Teclado) e Ricardo (Violino).</p>
+        <br>
+        <h3>Como tudo começou?</h3>
+        <p>Antes de se unirem oficialmente, os três já
+          atuavam individualmente em grupos e eventos musicais diversos. Ricardo, com sólida
+          trajetória, é responsável pelos arranjos de violino que trazem sofisticação e emoção às
+          apresentações. Dika, pianista versátil, conduz a base harmônica com sensibilidade e
+          precisão. E Karine, com sua voz marcante e presença cativante,
+          encantando o público com interpretações emocionadas e autênticas. <br> <br>
+
+          O Amor em Canções surgiu da união de experiências, amizade e do desejo comum de
+          transformar momentos especiais em lembranças inesquecíveis. Com um repertório
+          selecionado com cuidado, o grupo oferece música ao vivo com qualidade, elegância e
+          emoção.</p>
+      </div>
+      <div class="abtright">
+        <video controls preload="metadata">
+          <source src="audio/Cheiro de rosas.mp4" type="video/mp4">
+          Seu navegador não suporta vídeo.
+        </video>
+      </div>
+
+
+
+      <!-- Caso não seja video local -->
+      <!-- <div class="abtright">
+        <iframe width="250" height="400" src="audio/Cheiro de rosas.mp4" title="Instagram Reels" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div> -->
+    </div>
+  </section>
+
+
+
+
+
+
+  <!--Membros da banda -->
+  <h1 class="fp">Membros da banda</h1>
+  <section class="swipercon" id="Membros da banda">
+    <div class="con">
+      <div class="container swiper">
+        <div class="slide-container">
+          <div class="card-wrapper swiper-wrapper">
+            <div class="card swiper-slide">
+              <div class="image-box">
+                <img src="images/00-Karine.jpeg" alt="" />
+              </div>
+              <div class="profile-details">
+                <img src="images/00-Karine.jpeg" alt="" />
+                <div class="name-job">
+                  <h3 class="name">Karine Silva</h3>
+                  <h4 class="job">Vocalista</h4>
+                </div>
+              </div>
+            </div>
+            <div class="card swiper-slide">
+              <div class="image-box">
+                <img src="images/00-Ricardo.jpeg" alt="" />
+              </div>
+              <div class="profile-details">
+                <img src="images/00-Ricardo.jpeg" alt="" />
+                <div class="name-job">
+                  <h3 class="name">Ricardo</h3>
+                  <h4 class="job">Violinista</h4>
+                </div>
+              </div>
+            </div>
+            <div class="card swiper-slide">
+              <div class="image-box">
+                <img src="images/00-Dika.jpeg" alt="" />
+              </div>
+              <div class="profile-details">
+                <img src="images/00-Dika.jpeg" alt="" />
+                <div class="name-job">
+                  <h3 class="name">Dika</h3>
+                  <h4 class="job">Tecladista</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next swiper-navBtn"></div>
+        <div class="swiper-button-prev swiper-navBtn"></div>
+        <br>
+        <br>
+        <div class="swiper-pagination"></div>
+
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <!-- Repertório -->
+  <section class="popular" id="Repertório">
+    <h1>Repertório</h1>
+    <div class="card-list">
+      <a href="#" class="card-item">
+        <img src="images/1.png" alt="Card Image">
+        <span class="NomeMusica">Cheiro de rosas</span>
+        <h3>Colo de Deus</h3>
+
+        <div class="cardlow">
+          <div class="arrow">
+            <i class="fas fa-arrow-right card-icon"></i>
+          </div>
+          <audio controls>
+            <source src="audio/Cheiro de rosas.mp3" type="audio/mpeg">
+          </audio>
+        </div>
+
+      </a>
+      <a href="#" class="card-item">
+        <img src="images/2.png" alt="Card Image">
+        <span class="NomeMusica">Jesus meu esposo</span>
+        <h3>Colo de Deus</h3>
+        <div class="cardlow">
+          <div class="arrow">
+            <i class="fas fa-arrow-right card-icon"></i>
+          </div>
+          <audio controls>
+            <source src="audio/Jesus meu esposo.mp3" type="audio/mpeg">
+          </audio>
+        </div>
+      </a>
+      <a href="#" class="card-item">
+        <img src="images/3.png" alt="Card Image">
+        <span class="NomeMusica">Creio nas promessas de Deus</span>
+        <h3>Padre Marcelo Rossi</h3>
+        <div class="cardlow">
+          <div class="arrow">
+            <i class="fas fa-arrow-right card-icon"></i>
+          </div>
+          <audio controls>
+            <source src="audio/Creio nas promessas de Deus.mp3" type="audio/mpeg">
+          </audio>
+        </div>
+      </a>
+      <a href="#" class="card-item">
+        <img src="images/4.jpeg" alt="Card Image">
+        <span class="NomeMusica">Simplesmente José</span>
+        <h3>Eugênio Jorge</h3>
+        <div class="cardlow">
+          <div class="arrow">
+            <i class="fas fa-arrow-right card-icon"></i>
+          </div>
+          <audio controls>
+            <source src="audio/Simplesmente José.mp3" type="audio/mpeg">
+          </audio>
+        </div>
+      </a>
+      <a href="#" class="card-item">
+        <img src="images/5.png" alt="Card Image">
+        <span class="NomeMusica">Simplesmente José</span>
+        <h3>Eugênio Jorge</h3>
+        <div class="cardlow">
+          <div class="arrow">
+            <i class="fas fa-arrow-right card-icon"></i>
+          </div>
+          <audio controls>
+            <source src="audio/Simplesmente José.mp3" type="audio/mpeg">
+          </audio>
+        </div>
+      </a>
+      <a href="#" class="card-item">
+        <img src="images/6.jpeg" alt="Card Image">
+        <span class="NomeMusica">Simplesmente José</span>
+        <h3>Eugênio Jorge</h3>
+        <div class="cardlow">
+          <div class="arrow">
+            <i class="fas fa-arrow-right card-icon"></i>
+          </div>
+          <audio controls>
+            <source src="audio/Simplesmente José.mp3" type="audio/mpeg">
+          </audio>
+        </div>
+      </a>
+    </div>
+
+
+    <div class="repertorio-download">
+      <a href="pdf/Repertorio-Amor-em-Cancoes.pdf" download class="btn-download">
+        <i class="fas fa-file-pdf"></i>
+        Baixar repertório em PDF
+      </a>
+    </div>
+
+  </section>
+
+
+
+
+  <section class="faqcon" id="Dúvidas">
+    <div class="faq25">
+      <h1>Dúvidas</h1>
+      <div class="accordion">
+        <div class="accordion-item">
+          <button id="accordion-button-1" aria-expanded="false">
+            <span class="accordion-title">Quantas músicas posso escolher?
+            </span>
+            <span class="icon" aria-hidden="true"></span>
+          </button>
+          <div class="accordion-content">
+            <p>
+              Para cada entrada, escolhe-se uma música... Para o momento final de cumprimentos/ fotos, escolhe-se de 6 a
+              8 músicas.
+            </p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button id="accordion-button-2" aria-expanded="false">
+            <span class="accordion-title">Qual é o prazo para escolher as músicas?</span>
+            <span class="icon" aria-hidden="true"></span>
+          </button>
+          <div class="accordion-content">
+            <p>
+              A lista com as músicas escolhidas pode ser enviada com 30 dias de antecedência ou antes caso desejar.
+            </p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button id="accordion-button-3" aria-expanded="false">
+            <span class="accordion-title">Posso escolher músicas que não foram listadas no repertório?</span>
+            <span class="icon" aria-hidden="true"></span>
+          </button>
+          <div class="accordion-content">
+            <p>
+              Sim, para músicas católicas fora deste repertório, pedimos para nos enviar com mais antecedência.
+            </p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button id="accordion-button-4" aria-expanded="false">
+            <span class="accordion-title">Atuam apenas em cerimonias de igrejas católicas?</span>
+            <span class="icon" aria-hidden="true"></span>
+          </button>
+          <div class="accordion-content">
+            <p>
+              Atuamos principalmente em cerimônias de igrejas católicas,
+              mas estamos abertos a atender outras celebrações, conforme a necessidade e o contexto do evento.
+            </p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button id="accordion-button-5" aria-expanded="false">
+            <span class="accordion-title">Atuam somente em casamentos?</span>
+            <span class="icon" aria-hidden="true"></span>
+          </button>
+          <div class="accordion-content">
+            <p>
+              Nosso foco principal são os casamentos, mas estamos abertos a conversar.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+<!-- botão flutuante -->
+<a href="https://wa.me/553899885529?text=Olá,%20gostaria%20de%20informações%20sobre%20a%20banda%20Amor%20em%20Canções"
+   class="whatsapp-float"
+   target="_blank"
+   aria-label="Falar no WhatsApp">
+  <i class="fa-brands fa-whatsapp"></i>
+</a>
+
+
+
+    <script>const items = document.querySelectorAll('.accordion button');
+      function toggleAccordion() {
+        const itemToggle = this.getAttribute('aria-expanded');
+
+        for (i = 0; i < items.length; i++) {
+          items[i].setAttribute('aria-expanded', 'false');
+        }
+
+        if (itemToggle == 'false') {
+          this.setAttribute('aria-expanded', 'true');
+        }
+      }
+
+      items.forEach((item) => item.addEventListener('click', toggleAccordion));
+    </script>
+
+  </section>
+
+  <footer class="footer">
+    <div class="footer-col">
+      <div class="social-links">
+        <!-- <a href="#"><i class="fa-brands fa-facebook"></i></a> -->
+        <a href="https://www.instagram.com/karinessillva/"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.youtube.com/watch?v=0BYe-aCjh4c"><i class="fa-brands fa-youtube"></i></a>
+        <a href="https://wa.me/553899885529"><i class="fa-brands fa-whatsapp"></i></a>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <script>
+    const header = document.querySelector("header");
+    const menuToggler = document.querySelectorAll("#menu_toggle");
+    menuToggler.forEach(toggler => {
+      toggler.addEventListener("click", () => header.classList.toggle("showMenu"));
+    });
+  </script>
+
+
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+  <script src="jquery.counterup.min.js"></script>
+  <script src="jquery.counterup.min.js"></script>
+
+  <script>
+    jQuery(document).ready(function ($) {
+      $('.counter').counterUp({
+        delay: 10,
+        time: 3000
+      });
+    });
+
+  </script>
+
+
+  <footer>
+    <p>&copy; 2025 Developed by <i class="fa-solid fa-hand-point-right"></i>
+<a href="https://github.com/UrsulinoRocha" target="_blank"> Linnuxz</a>
+      <i class="fa fa-anchor" aria-hidden="true"></i>
+  </footer>
+
+</body>
+
+</html>
