@@ -577,7 +577,7 @@ header.showMenu .menu_items {
 }
 
 .accordion .accordion-item button[aria-expanded='true'] {
-  border-bottom: 1px solid magenta;
+  border-bottom: 1px solid #C9A24D;
 }
 
 .accordion-title {
@@ -602,14 +602,14 @@ header.showMenu .menu_items {
 .accordion button:hover,
 .accordion button:focus {
   cursor: pointer;
-  color: magenta;
+  color: #C9A24D;
 }
 
 .accordion button:hover::after,
 .accordion button:focus::after {
   cursor: pointer;
-  color: magenta;
-  border: 1px solid magenta;
+  color: #C9A24D;
+  border: 1px solid #C9A24D;
 }
 
 .accordion button .accordion-title {
@@ -650,7 +650,7 @@ header.showMenu .menu_items {
 }
 
 .accordion button[aria-expanded='true'] {
-  color: magenta;
+  color: #C9A24D;
 }
 
 .accordion button[aria-expanded='true'] .icon::after {
