@@ -810,7 +810,7 @@ footer {
 .hero {
   position: relative;
   min-height: 100vh;
-  background-image: url("./images/fundo2.png");
+  background-image: url("../images/fundo2.png");
   background-size: cover;
   background-position: center top;
   display: flex;
